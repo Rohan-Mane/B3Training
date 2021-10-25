@@ -1,0 +1,51 @@
+$ git config --global user.name Rohan
+$ git config --global user.email rohanmane@benchmarkit.solutions
+
+$ git init fresh-project
+    // creates new project "fresh-project" with .git file in init
+
+$ git init 
+    // Adds git to an existing project. open project folder and type command
+
+$ git status
+    // shows on which branch you are now
+    // untracked files
+    // files to be commited in staging area
+
+$ git add index.html
+    //this will add this index.html into staging area where it'll get tracked by git
+
+$ git add -A 
+$ git add . 
+    // if you have more than one untracked files then using this commands you can add all of them into staging area in one go 
+
+$ git commit
+    // it'll open default editor. add commit message in it. then save and close
+
+$ git commit -m "Commit message"
+    // commits directly through git bash with message
+
+$ git commit -a -m "Commit message"
+    //directly commmits without adding into staging area
+
+$ git branch
+    // show list of branches
+
+$ git branch feature1
+    // creates a new branch with name feature1
+
+$ git checkout feature1
+    //Switches between the branches
+
+$ git checkout -b newFeature
+    // creates new branch as well as Switches into it
+
+$ git merge feature1
+    // first switch to master
+    // then run this command.. it'll merge feature1 into master
+
+$ git pull origin master
+    // updates your local repository 
+
+$ git push origin master 
+    // pushes changes from local repository to remote repository
