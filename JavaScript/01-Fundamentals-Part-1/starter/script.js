@@ -29,3 +29,11 @@ console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+
+//=================================================================
+//Assignment - let, var, const 
+language = "Marathi";
+console.log(language);
+const birthYear = 2000;
+// birthYear = 2001;         gives error
+
