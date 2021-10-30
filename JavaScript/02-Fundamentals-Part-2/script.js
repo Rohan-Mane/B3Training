@@ -76,3 +76,23 @@ if(!neighbours.includes('Germany')) console.log('Probably not a central Europian
 neighbours[neighbours.indexOf('China')] = 'Fake china';
 console.log(neighbours);
 //===========================================================================
+const rohan = {
+    firstName: 'Rohan',
+    lastName: 'Mane',
+    birthYear: 2000,
+    job: 'Web developer',
+    friends: ['Minesh', 'Suraj', 'Honey'],
+    hasDriversLicense: true,
+
+    calcAge: function(birthYear){
+        return 2030-birthYear;
+    },
+
+    getSummary: function(){
+        return `${this.firstName} ${this.lastName} is ${this.calcAge(this.birthYear)} year old.He works as ${this.job} and his friends are ${this.friends}`;
+    }
+};
+
+console.log(rohan.calcAge(rohan.birthYear));
+console.log(rohan['calcAge'](2000));
+console.log(rohan.getSummary());
