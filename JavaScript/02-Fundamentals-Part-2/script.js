@@ -96,3 +96,89 @@ const rohan = {
 console.log(rohan.calcAge(rohan.birthYear));
 console.log(rohan['calcAge'](2000));
 console.log(rohan.getSummary());
+
+//================================================================================
+//Assignment 7 - Introduction to objects
+// const myCountry = {
+//     country: 'India',
+//     capital: 'Dehli',
+//     language: 'Hindi',
+//     population: 1.30,
+//     neighbours: ['Bangladesh', 'China', 'Pak']
+// }
+// console.log(myCountry);
+
+//=================================================================================
+//Assignment 8  - Dot vs bracket notation
+// console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+// console.log(`${myCountry.country} has ${myCountry.population+=2} million ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+// console.log(`${myCountry.country} has ${myCountry['population']-=2} million ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+
+//==================================================================================
+//Assignment 9 - Object methods
+const myCountry = {
+    country: 'India',
+    capital: 'Dehli',
+    language: 'Hindi',
+    population: 1.30,
+    neighbours: ['Bangladesh', 'China', 'Pak'],
+
+    describe: function(){
+        return `${this.country} has ${this.population} million ${this.language}  speaking people , ${this.neighbours.length} neibouring countries and a capital called ${this.capital}`;
+    },
+
+    checkIsland: function(){
+        return this.neighbours.length === 0? true: false;
+    }
+}
+
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
+
+//==================================================================================
+// Assignment 10 - Iteration- for loop
+for (let i=1;i<=50;i++)
+{
+    console.log(`voter number ${i} is currently voting`);
+}
+
+//=====================================================================================
+//Assignment 11 - Looping Arrays, Breaking and Cotinuing
+
+//populations = [10, 1441, 332, 135];
+const percentage2 = [];
+
+for(let i=0;i<populations.length; i++){
+    const perc = percentageOfWorld1(populations[i]);
+    percentage2.push(perc);
+}
+console.log(percentage2);
+
+//=======================================================================================
+//Assignment 12 - Looping backwords and loops in loops
+const listOfNeighbours = [
+    ['Canada', 'Mexico'],
+    ['Spain'],
+    ['Norway', 'Sweden', 'Russia']
+]
+
+for(let i=0; i<listOfNeighbours.length;i++)
+{
+    for(let j=0;j<listOfNeighbours[i].length; j++){
+        console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+    }
+}
+
+//=========================================================================================
+//Assignment 13- The while loop
+const percentage3 = [];
+let i=0;
+while(i<populations.length){
+    const perc = percentageOfWorld1(populations[i]);
+    percentage3.push(perc);
+    i++;
+
+}
+console.log(percentage3);
+
+// End of the season...
