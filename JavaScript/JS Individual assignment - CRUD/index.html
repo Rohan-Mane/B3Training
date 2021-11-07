@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />-->
+    <link rel="stylesheet" href="./style.css" />
+    <title>MicroBlog</title>
+  </head>
+  <body>
+    <header>
+      <h1>MicroBlog</h1>
+    </header>
+    <form>
+      <input type="text" class="blog-input" />
+      <button class="blog-button" type="submit">
+        <i class="fas fa-plus-square">Add</i>
+      </button>
+      <!-- TODO  Filter Selection 
+            <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="complete">Complete</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div> -->
+    </form>
+    <div class="blog-container">
+      <ul class="blog-list"></ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

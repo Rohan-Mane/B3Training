@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #35bdd0;
+  color: #0d0d0d;
+  font-family: "Popins", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 16px;
+  font-size: 32px;
+  border: none;
+  background: #fff;
+}
+
+form button {
+  color: #35bdd0;
+  background: #fff;
+  /* padding: 16px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #03c6c6;
+  color: #fff;
+  /* border: 1px solid #0b5252; */
+  font-size: 36px;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.blog {
+  margin: 8px;
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease-in;
+}
+
+.blog-item {
+  padding: 0px, 8px;
+}
+.blog li {
+  flex: 1;
+}
+
+.complete-button,
+.trash-button {
+  background: #2e2525;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.complete-button {
+  color: rgb(33, 241, 33);
+  margin-right: 2px;
+}
+.trash-button {
+  color: rgb(241, 33, 33);
+  margin-left: 2px;
+}
