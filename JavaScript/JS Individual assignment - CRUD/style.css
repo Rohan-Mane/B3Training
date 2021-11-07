@@ -10,6 +10,7 @@ body {
   font-family: "Popins", sans-serif;
   min-height: 100vh;
 }
+
 header {
   font-size: 1.5rem;
 }
@@ -21,76 +22,104 @@ form {
   justify-content: center;
   align-items: center;
 }
-
 form input,
-form button {
+.buttons {
   padding: 16px;
-  font-size: 32px;
+  font-size: 30px;
   border: none;
   background: #fff;
 }
-
-form button {
+.buttons {
   color: #35bdd0;
   background: #fff;
   /* padding: 16px; */
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
-form button:hover {
+.buttons:hover {
   background: #03c6c6;
   color: #fff;
   /* border: 1px solid #0b5252; */
   font-size: 36px;
+  border-radius: 4px;
+}
+#button {
+  margin-right: 5px;
+}
+#sort-button {
 }
 
-.blog-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.blog-list {
-  min-width: 30%;
-  list-style: none;
-}
-
-.blog {
-  margin: 8px;
+h1 {
+  text-align: center;
   padding: 10px;
-  background: #fff;
-  color: #000;
-  font-size: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.5s ease-in;
-}
-
-.blog-item {
-  padding: 0px, 8px;
-}
-.blog li {
-  flex: 1;
-}
-
-.complete-button,
-.trash-button {
-  background: #2e2525;
   color: #fff;
-  cursor: pointer;
-  border: none;
-  padding: 16px;
-  font-size: 16px;
-  border-radius: 5px;
 }
 
-.complete-button {
-  color: rgb(33, 241, 33);
-  margin-right: 2px;
+#root {
+  background: #fff;
 }
-.trash-button {
-  color: rgb(241, 33, 33);
-  margin-left: 2px;
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200mm;
+  height: auto;
+  background-color: #dcae96;
+  text-align: center;
+
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+.editButton {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.deleteButton {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.editButton:hover {
+  background: #fff;
+  color: green;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease;
+  /* border: 1px solid #0b5252; */
+  /* font-size: 20px; */
+}
+.deleteButton:hover {
+  background: #fff;
+  color: red;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease;
+}
+#msg {
+  text-align: center;
+  align-items: center;
+  background-color: gray;
+  padding: auto;
+  width: 25%;
+  margin-left: 500px;
+  color: #fff;
+}
+
+/* Search bar */
+#search-book {
+  margin: 10px;
+}
+
+/* sort button */
