@@ -60,3 +60,81 @@ console.log(description);
 //confirm("You");
 //console.log(5+ +'5');
 //======================================================================
+//Assignment -  ifElse
+if(population > 33)
+{
+    console.log("Portugal's population is above average");
+}
+else{
+    console.log("Portugal's population is 22 below average");
+}
+
+//=======================================================================
+//Assignment - Type conversion and coercion
+console.log('9'-'5');
+console.log('19'-'13'+'17');
+console.log('19'-'13'+17);
+console.log('123'<57)
+console.log(5+6+'4'+9-4-2);
+
+//========================================================================
+//Assignment - Equality operators  - ==  vs ===
+
+//const Neighbors = prompt("How many neighbor countries you have? ");
+// const numNeighbors = Number(Neighbors);
+// if(numNeighbors ===  1)
+// {
+//     console.log("Only one border");
+// }else if(numNeighbors  > 1)
+// {
+//     console.log("More than 1 border");
+// }else{
+//     console.log("No border");
+// }
+
+//=========================================================================
+//Assignment  - Logical operators
+if(language === 'English' && population<50 && !isIsland){
+    console.log(`You should live in ${country}`);
+}else{
+    console.log(`${country} does not match your criteria`);
+}
+
+//==========================================================================
+//Assignment  - switch statement
+language = 'spanish';
+switch(language){
+    case 'chinese':
+    case 'mandarin':
+        console.log("Most number of native speakers");
+        break;
+    
+    case 'spanish':
+        console.log("2nd place in number of native places");
+        break;
+    
+    case 'english':
+        console.log("3rd place");
+        break;
+
+    case 'hindi':
+        console.log("number 4");
+        break;
+
+    case 'arabic':
+        console.log("5th most spoken language");
+        break;
+    
+    default:
+        console.log("Great language too");
+        break;
+}
+
+//======================================================================
+//Assignment - ternary operator
+population=  130;
+const position = population > 33 ? 'above': 'below';
+console.log(`Portugal's population is ${position} average`);
+
+//======================================================================
+//Part 1 completed

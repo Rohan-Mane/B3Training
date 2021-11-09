@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #35bdd0;
+  color: #0d0d0d;
+  font-family: "Popins", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+.buttons {
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  background: #fff;
+}
+.buttons {
+  color: #35bdd0;
+  background: #fff;
+  /* padding: 16px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttons:hover {
+  background: #03c6c6;
+  color: #fff;
+  /* border: 1px solid #0b5252; */
+  font-size: 36px;
+  border-radius: 4px;
+}
+#button {
+  margin-right: 5px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+#root {
+  background: #fff;
+}
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200mm;
+  height: auto;
+  background-color: #dcae96;
+  text-align: center;
+
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.editButton {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.deleteButton {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.editButton:hover {
+  background: #fff;
+  color: green;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease;
+  /* border: 1px solid #0b5252; */
+  /* font-size: 20px; */
+}
+.deleteButton:hover {
+  background: #fff;
+  color: red;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease;
+}
+#msg {
+  text-align: center;
+  align-items: center;
+  background-color: gray;
+  padding: auto;
+  width: 25%;
+  margin-left: 500px;
+  color: #fff;
+}
+
+/* Search bar */
+#search-book {
+  margin: 10px;
+}
+
+/* sort button */
