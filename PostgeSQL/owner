@@ -1,0 +1,82 @@
+-- Database: owners_pets
+
+-- DROP DATABASE owners_pets;
+
+CREATE DATABASE owners_pets
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_United States.1252'
+    LC_CTYPE = 'English_United States.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+	
+	
+--==================================================================
+
+--Challenge: DDL
+--creating owners table
+CREATE TABLE owners(
+	id SERIAL PRIMARY KEY,
+	first_name VARCHAR(30),
+	last_name VARCHAR(30),
+	city VARCHAR(30),
+	state CHAR(2),
+	email VARCHAR(50)
+);
+select * from owners;
+--creating pets table with fk
+CREATE TABLE pets(
+	id SERIAL PRIMARY KEY,
+	species VARCHAR(30),
+	full_name VARCHAR(30),
+	age INT,
+	owner_id INT REFERENCES owners(id)
+);
+drop table owners, pets;
+select * from pets;
+
+-- adding email to owners table
+ALTER TABLE owners
+ADD COLUMN email VARCHAR(50) UNIQUE;
+select * from owners;
+
+-- change data type of last_name column
+ALTER TABLE owners
+ALTER COLUMN last_name TYPE VARCHAR(50);
+
+
+
+
+
+
+--Challenge: DML
+--1. insert data into owners table
+INSERT INTO owners (first_name, last_name, city, state,email)
+VALUES('Samuel', 'Smith', 'Bostan', 'MA', 'samsmith@gmail.com'), 
+('Emma', 'Johnson', 'Seattle', 'WA', 'emjohnson@gmail.com'),
+('jhon', 'Oliver', 'New York', 'NY', 'jhonoliver@gmail.com'),
+('Olivia', 'Brown', 'San Francisco', 'CA', 'oliviabrown@gmail.com'),
+('Simon', 'Smith', 'Dallas', 'TX', 'simonsmith@gmail.com');
+INSERT INTO owners (first_name, last_name, city, state,email)
+VALUES(null, 'Maxwell', null, 'CA', 'lordmaxwell@gmail.com');
+SELECT * FROM owners;
+--2. insert data into pets table
+INSERT INTO pets (species, full_name, age,owner_id)
+VALUES('Dog', 'Rex', 6,1),
+('Rabbit', 'Fluffy', 2,5),
+('Cat', 'Tom', 8,2),
+('Mouse', 'Jerry', 2,2),
+('Dog', 'Biggles', 4,1),
+('Tortoise', 'Squirtle', 42, 3);
+select * from pets;
+--3. update fluffy the rabits age to 3
+UPDATE pets
+SET age=3
+WHERE id=2;
+select * from pets;
+--4. delete Mr. Maxwell from owners table
+DELETE FROM owners
+WHERE id=6;
+
+SELECT * FROM owners;
