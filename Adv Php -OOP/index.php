@@ -36,6 +36,7 @@
     // $user->login('Rohan', 'Rohan1234');
 
 
+    //__set, __get, __isset
     class Post{
         private $name;
 
@@ -88,7 +89,11 @@
         public static $minPassLength = 5;
 
         public static validPassword($password){
-            if(strlen($password) >= self::minPassLength)            //scop resulution operator
+            if(strlen($password) >= self::minPassLength) {         //scop resulution operator
+                return true;
+            }else{
+                return false;
+            }
         }
     }
 
