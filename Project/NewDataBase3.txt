@@ -1,0 +1,259 @@
+INSERT INTO users(email1,reg_number,gender,date_of_birth,address_id_1,address_id_2,contact_no_1,contact_no_2,timestamp1 )
+VALUES ( 'a@g.com','5','m','1980-1-03','9','10','65434','5899','1989-2-02'),( 'fab@g.com','6','m','1990-1-01','7','11','6772','8586','1989-1-01');
+
+
+
+INSERT INTO country_list(country_name) VALUES('Afganistan')
+INSERT INTO country_list(country_name) VALUES('Albania')
+INSERT INTO country_list(country_name) VALUES('Andora')
+INSERT INTO country_list(country_name) VALUES('Angola')
+INSERT INTO country_list(country_name) VALUES('Antigua and Barbuda')
+INSERT INTO country_list(country_name) VALUES('Argentenia')
+INSERT INTO country_list(country_name) VALUES('Armenia')
+INSERT INTO country_list(country_name) VALUES('Australia')
+INSERT INTO country_list(country_name) VALUES('Austria')
+
+
+
+INSERT INTO state_list(country_id,state_name) VALUES('3','Ontario');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Quebc');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Nova_Scotia');
+INSERT INTO state_list(country_id,state_name) VALUES('2','New_Burnswik');
+INSERT INTO state_list(country_id,state_name) VALUES('2','Mantioba');
+INSERT INTO state_list(country_id,state_name) VALUES('2','British Colombia');
+INSERT INTO state_list(country_id,state_name) VALUES('2','Prince Edward island');
+INSERT INTO state_list(country_id,state_name) VALUES('2','Saskatchewan');
+INSERT INTO state_list(country_id,state_name) VALUES('2','Alberta');
+INSERT INTO state_list(country_id,state_name) VALUES('2','NewFonland');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Berat');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Diber');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Durres');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Elbasan');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Fier');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Gjirokaster');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Korce');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Kukes');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Lezhe');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Shkoder');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Vlore');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Berat');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Diber');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Durres');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Elbasan');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Fier');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Gjirokaster');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Korce');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Kukes');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Lezhe');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Shkoder');
+INSERT INTO state_list(country_id,state_name) VALUES('3','Vlore');
+
+INSERT INTO state_list(country_id,state_name) VALUES('4','Adrar');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Chlef');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Laghouat');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Oum El Bouaghi');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Batna');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Béjaïa');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Biskra');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Béchar');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Blida');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Bouïra');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Tamanrasset');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Tébessa');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Tlemcen');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Tiaret');
+INSERT INTO state_list(country_id,state_name) VALUES('4','Tizi Ouzou');
+
+INSERT INTO state_list(country_id,state_name) VALUES('5','Andorra la VellaAndorra la Vella');
+INSERT INTO state_list(country_id,state_name) VALUES('5','Canillo Canillo');
+INSERT INTO state_list(country_id,state_name) VALUES('5','Encamp Encamp');
+INSERT INTO state_list(country_id,state_name) VALUES('5','Escaldes-Engordany Escaldes-Engordany');
+INSERT INTO state_list(country_id,state_name) VALUES('5','La Massana La Massana');
+INSERT INTO state_list(country_id,state_name) VALUES('5','Ordino Ordino');
+INSERT INTO state_list(country_id,state_name) VALUES('5','Sant Julià de Lòria Sant Julià de Lòria');
+INSERT INTO state_list(country_id,state_name) VALUES('5','Andorra Andorra');
+
+INSERT INTO state_list(country_id,state_name) VALUES('21','Bumthang Province');
+INSERT INTO state_list(country_id,state_name) VALUES('21','Daga Province');
+INSERT INTO state_list(country_id,state_name) VALUES('21','Kurmaed Province');
+INSERT INTO state_list(country_id,state_name) VALUES('21','Kurtoed Province');
+INSERT INTO state_list(country_id,state_name) VALUES('21','Paro Province');
+
+INSERT INTO state_list(country_id,state_name) VALUES('30','Stung Treng Municipality');
+INSERT INTO state_list(country_id,state_name) VALUES('30','Svay Rieng');
+INSERT INTO state_list(country_id,state_name) VALUES('30','Svay Rieng Municipality');
+INSERT INTO state_list(country_id,state_name) VALUES('30','Takéo');
+INSERT INTO state_list(country_id,state_name) VALUES('30','Doun Kaev Municipality');
+INSERT INTO state_list(country_id,state_name) VALUES('30','Oddar Meanchey');
+INSERT INTO state_list(country_id,state_name) VALUES('30','Samraong Municipality');
+INSERT INTO state_list(country_id,state_name) VALUES('30','Kep');
+INSERT INTO state_list(country_id,state_name) VALUES('30','Kep Municipality');
+INSERT INTO state_list(country_id,state_name) VALUES('30','Pailin');
+INSERT INTO state_list(country_id,state_name) VALUES('30','Pailin Municipality');
+INSERT INTO state_list(country_id,state_name) VALUES('30','Tboung Khmum');
+
+
+
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+INSERT INTO state_list(country_id,state_name) VALUES('1','Balkh');
+==========================================================================================================================================================
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('109','30','hector','isis road','beach city')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('108','20','beallari','tree avenewe','tree place')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('107','2','mustang','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('106','1','satergane','isis road','apple cider')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('105','2','toronto','tree avenewe','check point')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('104','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('102','1','taliban alley','isis road','stick street')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('101','2','toronto','tree avenewe','peacock house')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('100','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('99','1','taliban alley','isa road','hot rod')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('109','30','hector','isis road','beach city')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('108','20','beallari','tree avenewe','tree place')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('107','2','mustang','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('106','1','satergane','isis road','apple cider')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('105','2','toronto','tree avenewe','check point')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('104','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('102','1','taliban alley','isis road','stick street')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('101','2','toronto','tree avenewe','peacock house')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('100','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('99','1','taliban alley','isa road','hot rod')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('109','30','hector','isis road','beach city')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('108','20','beallari','tree avenewe','tree place')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('107','2','mustang','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('106','1','satergane','isis road','apple cider')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('105','2','toronto','tree avenewe','check point')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('104','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('102','1','taliban alley','isis road','stick street')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('101','2','toronto','tree avenewe','peacock house')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('100','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('99','1','taliban alley','isa road','hot rod')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('109','30','hector','isis road','beach city')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('108','20','beallari','tree avenewe','tree place')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('107','2','mustang','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('106','1','satergane','isis road','apple cider')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('105','2','toronto','tree avenewe','check point')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('104','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('102','1','taliban alley','isis road','stick street')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('101','2','toronto','tree avenewe','peacock house')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('100','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('99','1','taliban alley','isa road','hot rod')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('109','30','hector','isis road','beach city')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('108','20','beallari','tree avenewe','tree place')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('107','2','mustang','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('106','1','satergane','isis road','apple cider')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('105','2','toronto','tree avenewe','check point')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('104','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('102','1','taliban alley','isis road','stick street')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('101','2','toronto','tree avenewe','peacock house')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('100','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('99','1','taliban alley','isa road','hot rod')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('109','30','hector','isis road','beach city')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('108','20','beallari','tree avenewe','tree place')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('107','2','mustang','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('106','1','satergane','isis road','apple cider')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('105','2','toronto','tree avenewe','check point')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('104','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('102','1','taliban alley','isis road','stick street')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('101','2','toronto','tree avenewe','peacock house')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('100','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('99','1','taliban alley','isa road','hot rod')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('109','30','hector','isis road','beach city')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('108','20','beallari','tree avenewe','tree place')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('107','2','mustang','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('106','1','satergane','isis road','apple cider')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('105','2','toronto','tree avenewe','check point')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('104','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('102','1','taliban alley','isis road','stick street')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('101','2','toronto','tree avenewe','peacock house')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('100','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('99','1','taliban alley','isa road','hot rod')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('109','30','hector','isis road','beach city')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('108','20','beallari','tree avenewe','tree place')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('107','2','mustang','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('106','1','satergane','isis road','apple cider')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('105','2','toronto','tree avenewe','check point')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('104','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('102','1','taliban alley','isis road','stick street')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('101','2','toronto','tree avenewe','peacock house')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('100','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('99','1','taliban alley','isa road','hot rod')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('109','30','hector','isis road','beach city')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('108','20','beallari','tree avenewe','tree place')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('107','2','mustang','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('106','1','satergane','isis road','apple cider')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('105','2','toronto','tree avenewe','check point')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('104','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('102','1','taliban alley','isis road','stick street')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('101','2','toronto','tree avenewe','peacock house')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('100','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('99','1','taliban alley','isa road','hot rod')
+v
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('109','30','hector','isis road','beach city')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('108','20','beallari','tree avenewe','tree place')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('107','2','mustang','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('106','1','satergane','isis road','apple cider')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('105','2','toronto','tree avenewe','check point')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('104','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('102','1','taliban alley','isis road','stick street')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('101','2','toronto','tree avenewe','peacock house')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('100','2','toronto','tree avenewe','road heaven')
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('99','1','taliban alley','isa road','hot rod')
+===================================================================================================================================================================

@@ -1,0 +1,159 @@
+-- Database: CRM
+
+-- DROP DATABASE "CRM";
+
+CREATE DATABASE "CRM"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_United States.1252'
+    LC_CTYPE = 'English_United States.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+	
+CREATE SEQUENCE user_id_seq;
+
+CREATE TABLE country_list(
+  country_id smallint NOT NULL DEFAULT nextval('user_id_seq') PRIMARY KEY,
+  country_name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE state_list(
+  state_id smallint NOT NULL DEFAULT nextval('user_id_seq'::regclass) PRIMARY KEY,
+  country_id smallint,
+  state_name VARCHAR(50) NOT NULL,
+  FOREIGN KEY(country_id) REFERENCES country_list(country_id));
+  
+===================================================================================================================================================================
+
+
+ CREATE TABLE users(--1 need address_id1
+
+user_id serial PRIMARY KEY,
+	first_name VARCHAR(50) NOT NULL ,
+	last_name VARCHAR(50) NOT NULL ,		   
+	email VARCHAR(100) NOT NULL,
+   	reg_number BIGINT NOT NULL UNIQUE,
+   	gender CHAR(1) NOT NULL ,
+   	date_of_birth date ,
+   	address_line_1 VARCHAR(50) ,
+    	address_line_2 VARCHAR(50) ,
+	contact_no_1 BIGINT(12) NOT NULL,
+	contact_no_2 BIGINT(12),
+	created_at  date,
+	is_deleted boolean, 
+	address_id int references address(address_id),
+);
+
+CREATE TABLE address (
+address_id smallint NOT NULL DEFAULT nextval('user_id_seq') PRIMARY KEY,
+	country_id smallint NOT NULL,
+	state_id smallint NOT NULL,
+	city VARCHAR(50) NOT NULL ,
+	contact1 int NOT NULL,
+	contact2 int NOT NULL,
+	pincode int NOT NULL,
+	address_line1 VARCHAR(50) NOT NULL, 
+	address_line2 VARCHAR(50) NOT NULL, 
+	FOREIGN KEY(country_id) REFERENCES country_list(country_id),
+	FOREIGN KEY(state_id) REFERENCES state_list(state_id)
+	 
+);
+
+CREATE TABLE lead1(--2 need users
+lead_id SERIAPRIMARY KEY,
+	user_id smallint NOT NULL,
+	address_id smallint ,
+	referral VARCHAR(50) NOT NULL,
+	 timestamp1  date ,
+	FOREIGN KEY(user_id) REFERENCES users(user_id),
+	FOREIGN KEY(address_id) REFERENCES address(address_id)
+);
+--3 needs user
+CREATE TABLE opportunity(opportunity_id smallint NOT NULL DEFAULT nextval('user_id_seq') PRIMARY KEY,
+	lead_id smallint NOT NULL,
+	user_id smallint ,
+	address_id smallint,
+	is_deleted VARCHAR(50) NOT NULL,
+	opportunity_openclosed VARCHAR(50) NOT NULL,
+	 timestamp1  date ,
+	FOREIGN KEY(user_id) REFERENCES users(user_id),
+	FOREIGN KEY(lead_id) REFERENCES lead1(lead_id),
+	FOREIGN KEY(address_id) REFERENCES address(address_id));
+	
+--4	needs opportunity
+CREATE TABLE account(
+account_name VARCHAR(20) NOT NULL,
+account_id smallint NOT NULL DEFAULT nextval('user_id_seq') PRIMARY KEY,
+	opportunity_id  smallint NOT NULL,
+	opportunity_openclosed VARCHAR NOT NULL,
+	lead_id smallint NOT NULL,
+	user_id smallint NOT NULL,
+	address_id smallint NOT NULL,
+	
+	is_deleted VARCHAR(50) NOT NULL,
+	timestamp1  date ,
+	FOREIGN KEY(opportunity_id ) REFERENCES opportunity(opportunity_id ),
+	FOREIGN KEY(lead_id) REFERENCES lead1(lead_id),
+	FOREIGN KEY(user_id) REFERENCES users(user_id),
+	FOREIGN KEY(address_id) REFERENCES address(address_id));
+	
+CREATE TABLE account_plan (
+accountplan_id smallint NOT NULL DEFAULT nextval('user_id_seq') PRIMARY KEY,
+	account_id smallint NOT NULL,
+	plan_id smallint NOT NULL,
+	
+	
+	createdat timestamp 
+	
+);
+
+CREATE TABLE plan (
+plan_id smallint NOT NULL DEFAULT nextval('user_id_seq') PRIMARY KEY,
+	
+	
+	planname VARCHAR(50) NOT NULL ,
+	plantype VARCHAR(50) NOT NULL ,
+	planvalidity VARCHAR(50) NOT NULL ,
+	
+	createdat timestamp 
+	
+);
+
+
+--5 needs user
+CREATE TABLE employee(employee_id smallint NOT NULL DEFAULT nextval('user_id_seq') PRIMARY KEY,
+	user_id smallint NOT NULL,
+	task_id smallint NOT NULL,
+	is_deleted VARCHAR(40) NOT NULL,
+	FOREIGN KEY(user_id) REFERENCES users(user_id));
+	
+
+
+CREATE TABLE tasks(
+task_id smallint NOT NULL UNIQUE DEFAULT nextval('user_id_seq') PRIMARY KEY,
+task_name VARCHAR(50) NOT NULL ,
+employee_id smallint,
+opportunity_id smallint,
+lead_id smallint,
+task_date date,
+created_at timestamp,
+FOREIGN KEY(employee_id) REFERENCES employee(employee_id));
+
+
+	
+CREATE TABLE employee_account(employee_account_id smallint NOT NULL DEFAULT nextval('user_id_seq') PRIMARY KEY,
+	employee_id smallint,
+	task_id smallint ,
+	user_id SMALLINT,						  
+	opportunity_id smallint,
+	lead_id smallint,
+	account_id smallint,
+	task_description TEXT,
+		is_deleted VARCHAR(40),
+	status_open_closed  VARCHAR(40),
+	FOREIGN KEY(user_id) REFERENCES users(user_id)); 
+	
+--===================================================================================================
+
+select * from users;

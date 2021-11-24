@@ -1,0 +1,56 @@
+INSERT INTO country_list(country_name) VALUES('Afghanistan');
+INSERT INTO country_list(country_name) VALUES('Albania');
+INSERT INTO country_list(country_name) VALUES('Algeria');
+INSERT INTO country_list(country_name) VALUES('Andorra');
+INSERT INTO country_list(country_name) VALUES('Angola');
+INSERT INTO country_list(country_name) VALUES('Antigua and Barbuda');
+INSERT INTO country_list(country_name) VALUES('Argentina');
+INSERT INTO country_list(country_name) VALUES('Armenia');
+INSERT INTO country_list(country_name) VALUES('Australia');
+INSERT INTO country_list(country_name) VALUES('Austria');
+INSERT INTO country_list(country_name) VALUES('Azerbaijan');
+INSERT INTO country_list(country_name) VALUES('The Bahamas');
+INSERT INTO country_list(country_name) VALUES('Bahrain');
+INSERT INTO country_list(country_name) VALUES('Bangladesh');
+INSERT INTO country_list(country_name) VALUES('Barbados');
+INSERT INTO country_list(country_name) VALUES('Belarus');
+INSERT INTO country_list(country_name) VALUES('Belgium');
+INSERT INTO country_list(country_name) VALUES('Belize');
+INSERT INTO country_list(country_name) VALUES('Benin');
+INSERT INTO country_list(country_name) VALUES('Bhutan');
+INSERT INTO country_list(country_name) VALUES('Bolivia');
+INSERT INTO country_list(country_name) VALUES('Bosnia and Herzegovina');
+INSERT INTO country_list(country_name) VALUES('Botswana');
+INSERT INTO country_list(country_name) VALUES('Brazil');
+INSERT INTO country_list(country_name) VALUES('Brunei');
+INSERT INTO country_list(country_name) VALUES('Bulgaria');
+INSERT INTO country_list(country_name) VALUES('Burkina Faso');
+INSERT INTO country_list(country_name) VALUES('Burundi');
+INSERT INTO country_list(country_name) VALUES('Cambodia');
+INSERT INTO country_list(country_name) VALUES('Cameroon');
+INSERT INTO country_list(country_name) VALUES('Canada');
+INSERT INTO country_list(country_name) VALUES('Cape Verde');
+INSERT INTO country_list(country_name) VALUES('Central African Republic');
+INSERT INTO country_list(country_name) VALUES('Chad');');
+INSERT INTO country_list(country_name) VALUES('Chile');
+INSERT INTO country_list(country_name) VALUES('China');
+INSERT INTO country_list(country_name) VALUES('Colombia');
+
+==================================================================================================================================================================
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('32','1',Puli Khumri','taliban alley','isis road');
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('32','1',Puli Khumri','taliban alley','isis road');
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('32','1',Puli Khumri','taliban alley','isis road');
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('32','1',Puli Khumri','taliban alley','isis road');
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('32','1',Puli Khumri','taliban alley','isis road');
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('32','1',Puli Khumri','taliban alley','isis road');
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('32','1',Puli Khumri','taliban alley','isis road');
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('32','1',Puli Khumri','taliban alley','isis road');
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('32','1',Puli Khumri','taliban alley','isis road');
+INSERT INTO address(state_id,country_id,city,address_line1,address_line2) VALUES ('32','1',Puli Khumri','taliban alley','isis road');
+
+========================================================================================================================================================================
+INSERT INTO users(name,email1,reg_number,gender,date_of_birth,address_id_1,address_id_2,contact_no_1,contact_no_2) VALUES('person1','this@gmail','12345','male','2016-06-23','34','35','54423','3546')
+INSERT INTO users(name,email1,reg_number,gender,date_of_birth,address_id_1,address_id_2,contact_no_1,contact_no_2) VALUES('person1','this@gmail','12345','male','2016-06-23','34','35','54423','3546')
+INSERT INTO users(name,email1,reg_number,gender,date_of_birth,address_id_1,address_id_2,contact_no_1,contact_no_2) VALUES('person1','this@gmail','12345','male','2016-06-23','34','35','54423','3546')
+INSERT INTO users(name,email1,reg_number,gender,date_of_birth,address_id_1,address_id_2,contact_no_1,contact_no_2) VALUES('person1','this@gmail','12345','male','2016-06-23','34','35','54423','3546')
+INSERT INTO users(name,email1,reg_number,gender,date_of_birth,address_id_1,address_id_2,contact_no_1,contact_no_2) VALUES('person1','this@gmail','12345','male','2016-06-23','34','35','54423','3546')
