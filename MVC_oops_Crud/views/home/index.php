@@ -12,10 +12,16 @@
         <div>
         <table class="table table-striped table-bordered">
             <thead>
-                <tr class="bg-dark text-white text-center">
+            <tr class="bg-dark text-white text-center">
                     <th>Sr. No.</th>
-                    <th><a href="?sort=isbn">^</a> ISBN</th>
-                    <th><a href="?sort=bookname">^</a>Book Name</th>
+                    <th> ISBN
+                        <a class="text-right" href="<?php echo ROOT_PATH;?>home/index/<?php echo $sort[0];?>">^</a>
+                        <a class="text-right" href="<?php echo ROOT_PATH;?>home/index/<?php echo $sort[1];?>">^</a>
+                    </th>
+                    <th>Book Name
+                        <a class="text-right" href="<?php echo ROOT_PATH;?>home/index/<?php echo $sort[2];?>">^</a>
+                        <a class="text-right" href="<?php echo ROOT_PATH;?>home/index/<?php echo $sort[3];?>">^</a>
+                    </th>
                     <th>Author Name</th>
                     <th>Publication</th>
                     <th>Price</th>
