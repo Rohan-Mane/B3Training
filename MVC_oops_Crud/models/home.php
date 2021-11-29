@@ -4,7 +4,7 @@ class HomeModel extends Model{
 	public function Index(){
 
 		$post = filter_input_array(INPUT_POST,FILTER_SANITIZE_STRING);
-		$get = filter_input_array(INPUT_POST,FILTER_SANITIZE_STRING);
+		$get = filter_input_array(INPUT_GET,FILTER_SANITIZE_STRING);
 
 		if($get['id']){
 			$sort = $get['id'];
