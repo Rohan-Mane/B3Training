@@ -42,24 +42,55 @@ class HomeModel extends Model{
 	}
 
 	public function sortIsbn($sort){
-		if($sort == 'isbnAsc'){
-			$this->query("select * from books order by isbn");
+		switch($sort){
+			case "isbnAsc":
+				$this->query("select * from books order by isbn");
+				break;
+			
+			case "isbnDesc":
+				$this->query("select * from books order by isbn desc");
+				break;
+			
+			case "booknameAsc":
+				$this->query("select * from books order by bookname");
+				break;
+				
+			case "booknameDesc":
+				$this->query("select * from books order by bookname desc");
+				break;
+
+			case "authorAsc":
+				$this->query("select * from books order by authorname");
+				break;
+
+			case "authorDesc":
+				$this->query("select * from books order by authorname desc");
+				break;
+			
+			case "publicationAsc":
+				$this->query("select * from books order by bpublication");
+				break;
+
+			case "publicationDesc":
+				$this->query("select * from books order by bpublication desc");
+				break;
+
+			case "priceAsc":
+				$this->query("select * from books order by price");
+				break;
+
+			case "priceDesc":
+				$this->query("select * from books order by price desc");
+				break;
+
+
+			default:
+				break;
 		}
-		if($sort == 'isbnDesc'){
-			$this->query("select * from books order by isbn desc");
-		}
-		if($sort == 'booknameAsc'){
-			$this->query("select * from books order by bookname");
-		}
-		if($sort == 'booknameDesc'){
-			$this->query("select * from books order by bookname desc");
-		}
-		
 
 		$rows = $this->resultSet();
 		return $rows;
 	}
-
 
 	
 

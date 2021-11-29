@@ -65,8 +65,5 @@
 		return $this->stmt->fetchColumn();
 	}
 	
-
-
-
 	}
 ?>

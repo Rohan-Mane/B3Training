@@ -25,9 +25,9 @@
           <li>
             <a href='<?php echo ROOT_URL; ?>'>Books</a>
           </li>
-          <li>
-            <a href='<?php echo ROOT_URL; ?>store/add'>Add Book</a>
-          </li>
+          <!-- <li>
+            <a href='<?php //echo ROOT_URL; ?>store/add'>Add Book</a>
+          </li> -->
         </ul>
       </div>
     </div>

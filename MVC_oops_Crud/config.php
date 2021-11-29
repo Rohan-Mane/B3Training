@@ -6,7 +6,7 @@
 	define("DB_PASSWORD", "8963");
 	define("DB_NAME", "mvc_crud");
 
-	define("ROOT_PATH", "/MVC_oops_Crud/");
-	define("ROOT_URL", "http://localhost/MVC_oops_Crud/");
+	define("ROOT_PATH", "/MVC_Crud/");
+	define("ROOT_URL", "http://localhost/MVC_Crud/");
 
 ?>
